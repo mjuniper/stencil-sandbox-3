@@ -16,6 +16,17 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
+      copy: [
+        {
+          src: "../node_modules/@esri/calcite-components/dist/calcite",
+          dest: "calcite",
+        },
+        {
+          src:
+            "../node_modules/@esri/calcite-components/dist/calcite/assets/calcite-date-picker/nls",
+          dest: "calcite-date-picker/nls",
+        },
+      ],
     },
   ],
 };
